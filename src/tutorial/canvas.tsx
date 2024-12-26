@@ -2,7 +2,7 @@ import { Canvas } from "@react-three/fiber";
 
 const Tutorial = () => {
   return (
-    <Canvas>
+    <Canvas className="canvas">
       <mesh>
         <boxGeometry args={[2, 2, 2]} />
         <meshStandardMaterial />

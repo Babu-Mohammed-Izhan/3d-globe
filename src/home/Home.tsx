@@ -1,19 +1,21 @@
 import { NavLink } from "react-router";
 
+import "./home.css";
+
 const Home = () => {
   return (
-    <div>
+    <div className="home-wrapper">
       <h1>3D Projects</h1>
-      <NavLink to="/tutorial" end>
+      <NavLink className="home-link" to="/tutorial" end>
         3 js Tutorial
       </NavLink>
-      <NavLink to="/cube" end>
+      <NavLink className="home-link" to="/cube" end>
         Cube
       </NavLink>
-      <NavLink to="/glossy-sphere" end>
+      <NavLink className="home-link" to="/glossy-sphere" end>
         Glossy Sphere
       </NavLink>
-      <NavLink to="/clouds" end>
+      <NavLink className="home-link" to="/clouds" end>
         Clouds
       </NavLink>
     </div>
