@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 
-const CanvasComponent = () => {
+const Tutorial = () => {
   return (
     <Canvas>
       <mesh>
@@ -13,4 +13,4 @@ const CanvasComponent = () => {
   );
 };
 
-export default CanvasComponent;
+export default Tutorial;
