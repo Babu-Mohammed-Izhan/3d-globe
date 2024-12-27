@@ -5,6 +5,7 @@ import CubeCanvas from "./cube";
 
 import "./app.css";
 import MultiShapeCanvas from "./multi-shape";
+import GlossySphereCanvas from "./glossy-sphere";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/tutorial" element={<Tutorial />} />
         <Route path="/cube" element={<CubeCanvas />} />
         <Route path="/multi-shape" element={<MultiShapeCanvas />} />
+        <Route path="/glossy-sphere" element={<GlossySphereCanvas />} />
       </Routes>
     </div>
   );
