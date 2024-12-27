@@ -2,13 +2,25 @@ import { useFrame, Vector3 } from "@react-three/fiber";
 import { useRef, useState } from "react";
 import { Mesh } from "three";
 
-const Cube = ({ position }: { position: Vector3 }) => {
+const Cube = ({
+  position,
+  oppositeSpin,
+  speed,
+}: {
+  position: Vector3;
+  oppositeSpin?: boolean;
+  speed?: number;
+}) => {
   const ref = useRef<Mesh>(null);
   const [hovered, hover] = useState(false);
 
   useFrame((_, delta) => {
     if (ref.current) {
-      ref.current.rotation.x += delta;
+      if (oppositeSpin) {
+        ref.current.rotation.x -= delta * (speed ?? 1);
+      } else {
+        ref.current.rotation.x += delta * (speed ?? 1);
+      }
     }
   });
 
