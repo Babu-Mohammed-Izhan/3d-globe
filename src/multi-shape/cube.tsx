@@ -9,7 +9,7 @@ const Cube = ({ position }: { position: Vector3 }) => {
 
   useFrame((state) => {
     if (textRef.current) {
-      textRef.current.position.x = Math.sin(state.clock.elapsedTime * 3) * 5;
+      textRef.current.position.x = Math.sin(state.clock.elapsedTime * 2) * 4;
     }
   });
 
