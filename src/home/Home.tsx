@@ -12,6 +12,9 @@ const Home = () => {
       <NavLink className="home-link" to="/cube" end>
         Cube
       </NavLink>
+      <NavLink className="home-link" to="/multi-shape" end>
+        Multi Shape
+      </NavLink>
       <NavLink className="home-link" to="/glossy-sphere" end>
         Glossy Sphere
       </NavLink>
