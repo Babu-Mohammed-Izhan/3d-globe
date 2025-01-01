@@ -1,6 +1,5 @@
 import { useTexture } from "@react-three/drei";
 import { useState } from "react";
-import { Texture } from "three";
 
 const GlossySphere = () => {
   const texture = useTexture("/terrazo.png");
@@ -10,7 +9,8 @@ const GlossySphere = () => {
     <mesh onClick={() => setClicked((prev) => !prev)}>
       <sphereGeometry args={[1, 64, 64]} />
       <meshPhysicalMaterial
-        map={clicked ? texture : new Texture()}
+        key={clicked ? 0 : 1} // Force re render
+        map={clicked ? texture : null}
         clearcoat={1}
         metalness={1}
         clearcoatRoughness={0}

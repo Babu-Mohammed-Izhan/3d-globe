@@ -18,8 +18,8 @@ const Home = () => {
       <NavLink className="home-link" to="/glossy-sphere" end>
         Glossy Sphere
       </NavLink>
-      <NavLink className="home-link" to="/clouds" end>
-        Clouds
+      <NavLink className="home-link" to="/globe" end>
+        Globe
       </NavLink>
     </div>
   );

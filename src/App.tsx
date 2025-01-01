@@ -16,6 +16,7 @@ function App() {
         <Route path="/cube" element={<CubeCanvas />} />
         <Route path="/multi-shape" element={<MultiShapeCanvas />} />
         <Route path="/glossy-sphere" element={<GlossySphereCanvas />} />
+        <Route path="/globe" element={<GlossySphereCanvas />} />
       </Routes>
     </div>
   );
