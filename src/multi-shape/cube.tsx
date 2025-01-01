@@ -17,7 +17,7 @@ const Cube = ({ position }: { position: Vector3 }) => {
     <mesh
       position={position}
       onPointerOver={(event) => (event.stopPropagation, hover(true))}
-      onPointerOut={(_) => hover(false)}
+      onPointerOut={() => hover(false)}
     >
       <boxGeometry args={[0.75, 0.75, 0.75]} />
       <meshStandardMaterial>

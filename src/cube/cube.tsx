@@ -29,7 +29,7 @@ const Cube = ({
       ref={ref}
       position={position}
       onPointerOver={(event) => (event.stopPropagation, hover(true))}
-      onPointerOut={(_) => hover(false)}
+      onPointerOut={() => hover(false)}
     >
       <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={hovered ? "blue" : "indigo"} />
