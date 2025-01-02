@@ -1,13 +1,20 @@
 .home-wrapper {
   padding: 20px;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 70vh;
 }
 
 .home-link {
-  color: inherit;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.home-title {
+  color: white;
   text-decoration: none;
   margin-top: 10px;
 }

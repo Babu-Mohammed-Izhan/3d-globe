@@ -5,7 +5,7 @@ import "./home.css";
 const Home = () => {
   return (
     <div className="home-wrapper">
-      <h1>3D Projects</h1>
+      <h1 className="home-title">3D Projects</h1>
       <NavLink className="home-link" to="/tutorial" end>
         3 js Tutorial
       </NavLink>
